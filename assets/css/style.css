@@ -1,0 +1,141 @@
+/************* CSS GLOBAL VARIABLES **************/
+
+:root { /* VARIABLES */
+    --color-primary: #f6ba13;
+    --color-primary-shade: #815f00;
+    --color-primary-tint: #ffdb77;
+    --color-gray-8: #030303;
+    --color-gray-5: #8d8d8d;
+    --color-gray-3: #c4c4c4;
+    --color-gray-1: #f5f4f0;
+    --color-rubine: #83243c;
+    --color-darkpurple: #350e4d;
+    --color-lightpurple: #6c2a96;
+    --Recursive: 'Recursive', monospace;
+}
+
+/**************** GENERAL STYLES ****************/
+
+
+body {
+    font-family: var(--Recursive);
+    border: 0px;
+}
+
+
+/************ MAIN > SECTION LAYOUT STYLES ************/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#ethos #works #contact {
+    /* max-block-size: 100vh; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer {
+    min-height: 6em;
+    vertical-align: middle;
+}
+
+.navbar-nav {
+    margin: 0;
+    float: left;
+}
+
+.navbar-nav>li {
+    float: left;
+}
+
+.ethosHeadshot {
+
+}
+
+.ethosText {
+    flex-direction: column;
+}
+
+.project {
+    border: solid red 1px;
+    inline-size: auto;
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+}
+
+.project-featured {
+
+}
+
+/***************** TYPOGRAPHY *****************/
+
+/* Responsive Sizing: Try "CSS Locks" */
+/* font-size: calc(16px + 2 * ((100vw - 320px) / 680)); */
+
+/* Responsive Sizing: Try "CSS Clamp" */
+/* font-size: clamp(100%, 1rem + 2vw, 24px); */
+
+main {
+    /* font grows 1px beyond user default size (usually 16px) for every 100px of viewport width */
+    font-size: calc(0.9em + 1vw);
+    /* leading grows along with font, starting 10% beyond point size plus 0.5px per 100px of the viewport width */
+    line-height: calc(1.1em + 1vw);
+    /* use only one variable font family for entire site! */
+    font-family: 'Recursive', sans-serif, monospace;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    /* background-color: #f6ba13; */
+    margin: 0px;
+}
+
+h3 {
+    text-align: center;
+    /* background-color: #815f00; */
+    margin: 0px;
+}
+
+.ethosHeadshot h1 {
+    font-variation-settings: 'slnt' -15, 'wght' 600, 'CASL' 1, 'CRSV' 1,'MONO' 0;
+    color: #f6ba13;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.narrative {
+    font-variation-settings: 'slnt' 0, 'wght' 300, 'CASL' 1, 'CRSV' 1, 'MONO' 0;
+}
+
+.bold {
+    font-variation-settings: 'slnt' 0, 'wght' 800, 'CASL' 1, 'CRSV' 1, 'MONO' 0;
+}
+
+.footertext {
+    color: gray;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.5em 0;
+}
+
+
+/***************** TYPOGRAPHIC ANIMATION *****************/
+
+span.highlight {
+    background-image: linear-gradient(var(--color-lightpurple), var(--color-darkpurple));
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	background-size: 0px 100%;
+	transition: background-size .8s, background-position .8s ease-in 0s;
+}
+
+span.highlight:hover {
+    background-size: 100% 100%;
+	background-position: 0% 100%;
+	transition: background-position .8s, background-size .8s ease-in 0s;
+}
