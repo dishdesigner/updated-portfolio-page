@@ -36,6 +36,13 @@ main {
     flex-wrap: wrap;
 }
 
+#ethos {
+    background-image: url("../images/DarrinScottHunter-headshot.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 #footer {
     min-height: 6em;
     vertical-align: middle;
@@ -50,23 +57,11 @@ main {
     float: left;
 }
 
-.ethosHeadshot {
-
-}
-
-.ethosText {
-    flex-direction: column;
-}
-
 .project {
     border: solid red 1px;
     inline-size: auto;
     flex-wrap: wrap;
     flex: 0 1 50%;
-}
-
-.project-featured {
-
 }
 
 /***************** TYPOGRAPHY *****************/
