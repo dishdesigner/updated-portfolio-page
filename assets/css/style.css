@@ -22,7 +22,6 @@ body {
     border: 0px;
 }
 
-
 /************ MAIN > SECTION LAYOUT STYLES ************/
 main {
     display: flex;
@@ -37,31 +36,15 @@ main {
 }
 
 #ethos {
-    background-image: url("../images/DarrinScottHunter-headshot.jpg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
+    /* background-color: var(--color-primary-shade); */
+    background-image: url(../images/Dish-Pattern-1.svg);
+    background-repeat: repeat;
+    background-size: 10em;
 }
 
 #footer {
     min-height: 6em;
     vertical-align: middle;
-}
-
-.navbar-nav {
-    margin: 0;
-    float: left;
-}
-
-.navbar-nav>li {
-    float: left;
-}
-
-.project {
-    border: solid red 1px;
-    inline-size: auto;
-    flex-wrap: wrap;
-    flex: 0 1 50%;
 }
 
 /***************** TYPOGRAPHY *****************/
@@ -74,9 +57,9 @@ main {
 
 main {
     /* font grows 1px beyond user default size (usually 16px) for every 100px of viewport width */
-    font-size: calc(0.9em + 1vw);
+    /* font-size: calc(0.9em + 1vw); */
     /* leading grows along with font, starting 10% beyond point size plus 0.5px per 100px of the viewport width */
-    line-height: calc(1.1em + 1vw);
+    /* line-height: calc(1.1em + 1vw); */
     /* use only one variable font family for entire site! */
     font-family: 'Recursive', sans-serif, monospace;
     text-align: left;
@@ -94,21 +77,36 @@ h3 {
     margin: 0px;
 }
 
-.ethosHeadshot h1 {
-    font-variation-settings: 'slnt' -15, 'wght' 600, 'CASL' 1, 'CRSV' 1,'MONO' 0;
-    color: #f6ba13;
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-}
-
 .narrative {
     font-variation-settings: 'slnt' 0, 'wght' 300, 'CASL' 1, 'CRSV' 1, 'MONO' 0;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 4px 0px;
+    background-color: rgb(0,0,0);
 }
 
 .bold {
     font-variation-settings: 'slnt' 0, 'wght' 800, 'CASL' 1, 'CRSV' 1, 'MONO' 0;
+}
+
+.redirect {
+    font-variation-settings: 'slnt' 0, 'wght' 600, 'CASL' 0, 'CRSV' 0, 'MONO' 1;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 4px 8px;
+    background-color: #f6ba13;
+    color: black;
+}
+
+a > span.redirect {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.redirect:hover {
+    background-color: var(--color-lightpurple);
+    color: white;
+    text-decoration-color: black;
 }
 
 .footertext {
@@ -126,11 +124,13 @@ span.highlight {
 	background-repeat: no-repeat;
 	background-position: 100% 0%;
 	background-size: 0px 100%;
+    padding: 4px 0px;
 	transition: background-size .8s, background-position .8s ease-in 0s;
 }
 
 span.highlight:hover {
     background-size: 100% 100%;
 	background-position: 0% 100%;
+    padding: 4px 0px;
 	transition: background-position .8s, background-size .8s ease-in 0s;
 }
