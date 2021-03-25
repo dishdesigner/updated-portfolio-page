@@ -34,7 +34,7 @@ Displaying a clear and compelling aesthetic that is coupled with technical execu
 ---
 
 ## Screenshot(s) & Links
-![Dish Design Digital coding portfolio](https://dishdesigner.github.io/updated-portfolio-page/images/portfolio-screenshot.jpg)
+![Dish Design Digital coding portfolio](https://raw.githubusercontent.com/dishdesigner/updated-portfolio-page/main/assets/images/portfolio-screenshot.jpg)
 * [Portfolio solution landing page](https://dishdesigner.github.io/updated-portfolio-page/)
 
 ---
