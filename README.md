@@ -1,5 +1,5 @@
-# Professional Portfolio: Darrin Scott Hunter (version 1.0)
-* [SEE THE DEPLOYED APPLICATION HERE](https://dishdesigner.github.io/professional-portfolio)
+# Professional Portfolio: Darrin Scott Hunter (version 2.0)
+* [SEE THE DEPLOYED APPLICATION HERE](https://dishdesigner.github.io/updated-portfolio-page/)
 ---
 
 ## Description
@@ -33,11 +33,9 @@ Displaying a clear and compelling aesthetic that is coupled with technical execu
 
 ---
 
-## Screenshot(s)
-
-??????????????????????????????????????????????????? ADD THIS SCREENSHOT WHEN FINISHED
-* [Portfolio solution landing page](https://dishdesigner.github.io/professional-portfolio/assets/images/Screenshot.gif)
-* [Demo image from project criteria](https://dishdesigner.github.io/professional-portfolio/assets/images/Demo.gif)
+## Screenshot(s) & Links
+![Dish Design Digital coding portfolio](https://dishdesigner.github.io/updated-portfolio-page/images/portfolio-screenshot.jpg)
+* [Portfolio solution landing page](https://dishdesigner.github.io/updated-portfolio-page/)
 
 ---
 ## Installation
