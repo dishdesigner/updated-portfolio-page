@@ -36,10 +36,15 @@ main {
 }
 
 #ethos {
-    /* background-color: var(--color-primary-shade); */
     background-image: url(../images/Dish-Pattern-1.svg);
     background-repeat: repeat;
     background-size: 10em;
+}
+
+#contact {
+    background-image: url(../images/typography-background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #footer {
@@ -77,6 +82,10 @@ h3 {
     margin: 0px;
 }
 
+.bold {
+    font-variation-settings: 'slnt' 0, 'wght' 800, 'CASL' 1, 'CRSV' 1, 'MONO' 0;
+}
+
 .narrative {
     font-variation-settings: 'slnt' 0, 'wght' 300, 'CASL' 1, 'CRSV' 1, 'MONO' 0;
     font-size: 2rem;
@@ -85,8 +94,25 @@ h3 {
     background-color: rgb(0,0,0);
 }
 
-.bold {
-    font-variation-settings: 'slnt' 0, 'wght' 800, 'CASL' 1, 'CRSV' 1, 'MONO' 0;
+.linkedin, .github, .website {
+    font-variation-settings: 'slnt' 0, 'wght' 300, 'CASL' 1, 'CRSV' 1, 'MONO' 0;
+    color: white;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 4px 0px;
+}
+
+.linkedin {
+    background-color: var(--color-gray-8);
+}
+
+.github {
+    background-color: var(--color-rubine);
+}
+
+.website {
+    color: black;
+    background-color: var(--color-primary);
 }
 
 .redirect {
@@ -98,12 +124,12 @@ h3 {
     color: black;
 }
 
-a > span.redirect {
+a > span {
     text-decoration: underline;
     text-decoration-color: white;
 }
 
-.redirect:hover {
+.redirect:hover, .linkedin:hover, .github:hover, .website:hover {
     background-color: var(--color-lightpurple);
     color: white;
     text-decoration-color: black;
